@@ -1,0 +1,11 @@
+<form>
+tweets serch
+<input type = "text" name="query" />
+<input type = "submit" value="search" />
+
+<% if @tweets %>
+  <% @tweets.each do |tweet| %>
+    <P><%= tweet.comment %></P>
+  <%end %>
+<%end%>
+</form>
